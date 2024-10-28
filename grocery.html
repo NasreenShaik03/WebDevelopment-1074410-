@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Order Form</title>
+    <link rel="stylesheet" href="grocery.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Order Form</h1>
+        <form>
+            <!-- Customer Details -->
+            <fieldset>
+                <legend>Customer Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <!-- Grocery Items -->
+            <fieldset>
+                <legend>Select Your Items</legend>
+
+                <label for="vegetables">Vegetables:</label>
+                <select id="vegetables" name="vegetables">
+                    <option value="">Select an item</option>
+                    <option value="Onions">Onions</option>
+                    <option value="Brinjal">Brinjal</option>
+                    <option value="Carrots">Carrots</option>
+                    <option value="Spinach">Spinach</option>
+                    <option value="Potato">Potato</option>
+                    <option value="Tomatoes">Tomatoes</option>
+                </select>
+
+                <label for="fruits">Fruits:</label>
+                <select id="fruits" name="fruits">
+                    <option value="">Select an item</option>
+                    <option value="Apples">Apples</option>
+                    <option value="Bananas">Bananas</option>
+                    <option value="Oranges">Oranges</option>
+                    <option value="Kiwi">Kiwi</option>
+                    <option value="Avocados">Avocados</option>
+                </select>
+
+                <label for="meat">Meat:</label>
+                <select id="meat" name="meat">
+                    <option value="">Select an item</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Fish">Fish</option>
+                    <option value="Prawns">Prawns</option>
+                </select>
+
+                <label for="dairy">Dairy:</label>
+                <select id="dairy" name="dairy">
+                    <option value="">Select an item</option>
+                    <option value="Milk">Milk</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="Yogurt">Yogurt</option>
+                    <option value="Butter">Butter</option>
+                    <option value="Ice-Cream">Ice-Cream</option>
+                    <option value="Paneer">Paneer</option>
+                </select>
+
+
+                <label for="pantry">Pantry:</label>
+                <select id="pantry" name="pantry">
+                    <option value="">Select an item</option>
+                    <option value="Cinnamon">Cinnamon</option>
+                    <option value="Cumin">Cumin</option>
+                    <option value="Oregano">Oregano</option>
+                    <option value="Paprika">Paprika</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="quantity" name="quantity" required>
+            </fieldset>
+
+            <!-- Delivery Options -->
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date" name="delivery-date" required>
+
+                <label>Delivery Type:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="delivery-option" value="normal-delivery" required>Normal Delivery</label>
+                    <label><input type="radio" name="delivery-option" value="express-delivery" required>Express Delivery</label>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Add to List</button>
+        </form>
+    </div>
+</body>
+</html>

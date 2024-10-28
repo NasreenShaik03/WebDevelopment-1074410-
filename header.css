@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/**NAVBAR**/
+.navbar {
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+.navbar span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar a {
+    text-decoration: none;
+    color: #0e1012;
+}
+.profile-header {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+}
+ul li {
+    font-size: 20px;
+    font-weight: 600;
+    list-style-type: none;
+    position: relative; /*to make line appear below the menu items*/
+}
+ul li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the line */
+    width: 100%;
+    height: 2px; /* Adjust this value to change the thickness of the line */
+    border-radius: 100px;
+    background-color: #0e1012; 
+}
+.profile-header:hover {
+    cursor: pointer;
+}
+.profile-header li {
+    font-size: 20px;
+    font-weight: 600;
+    list-style-type: none;    
+}
+.h-title {
+    display: flex;
+    justify-content: center;
+}
+
+/** Profile Pic and Text **/
+.profile-body {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-pic {
+    display: flex;
+    width: 97%; 
+    border: 2px solid black;
+    padding: 10px; 
+}
+.left {
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.left img {
+    height: 170px;
+    border-radius: 50px;
+    /* border: 2px solid black; */
+}
+.right {
+    padding: 20px;
+    width: 650px;
+    height: 100px;
+}
+
+/** Education **/
+.education {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.h-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+.education li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #1e242b;
+    position: relative; /* Ensure the hover effect works */
+}
+.education li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    border-radius: 100px;
+    background-color: #0e1012;
+}
+.education li strong {
+    display: block;
+    font-size: 18px;
+    color: #fb904d;
+}
+
+/** Skills **/
+.skills {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+.skills li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #1e242b;
+    position: relative; /* Ensure the hover effect works */
+}
+.skills li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    border-radius: 100px;
+    background-color: #0e1012;
+}
+.skills li strong {
+    display: block;
+    
+    font-size: 18px;
+    color: #fb904d;
+}
+
+
+/** Projects **/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.projects {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #1e242b;
+    position: relative; /* Ensure the hover effect works */
+}
+.project:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    border-radius: 100px;
+    background-color: #0e1012;
+}
+.project h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #fb904d;
+}
+.project p {
+    margin: 5px 0;
+}
+
+
+/** HR Styling **/
+hr {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    box-shadow: 0 2px 4px rgba(86, 16, 218, 0.3); 
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/** Footer **/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-section {
+    margin: 10px 0;
+}
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+.footer-section p, .footer-section a {
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
